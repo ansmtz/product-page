@@ -69,6 +69,20 @@ body {
     color: #22343D;
 }
 
+/* headers */
+
+.h2.subtitle {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.h4.subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
 
 /* Navbar */
 
@@ -212,11 +226,6 @@ body {
     /* text-align: center; */
 }
 
-.subtitle {
-    font-weight: 700;
-    font-size: 2rem;
-    margin-bottom: 3rem;
-}
 
 .features__list {
     margin-bottom: 2rem;
@@ -269,5 +278,33 @@ body {
     }
     .feature + .feature {
         margin: 0;
+    }
+}
+
+
+/* services */
+
+.service-card__image > * {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.service-card + .service-card {
+    margin-top: 2.5rem;
+}
+
+.service-card__description {
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 780px){
+    .service-card {
+        display: flex;
+        gap: 6rem; 
+    }
+    .service-card__image {
+        flex: 48%;
+        max-width: 543px;
     }
 }
