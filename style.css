@@ -83,6 +83,17 @@ body {
     margin-bottom: .5rem;
 }
 
+/* bullet */
+
+.bullet {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background-size: 50% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 /* Navbar */
 
@@ -241,16 +252,6 @@ body {
     margin-top: 2.5rem;
 }
 
-.feature__icon {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 1rem;
-    margin-bottom: 1.5rem;
-    box-shadow: 0px 4px 4px 0px #00000040;
-    background-size: 50% 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 .feature__description {
     margin-top: 1rem;
@@ -284,27 +285,65 @@ body {
 
 /* services */
 
-.service-card__image > * {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
 .service-card + .service-card {
     margin-top: 2.5rem;
 }
 
-.service-card__description {
+
+.service-card__image > * {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.service-card__description,
+.service-card__list {
     margin-bottom: 2rem;
 }
+
+.service-card__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.service-card__item + .service-card__item {
+    margin-top: 2rem;
+}
+
+.service-card__feature-description {
+    margin-left: 2rem;
+    flex: 70%;
+}
+
+.service-card__item:nth-child(1) .service-card__feature-icon {
+    background: #FF9900 url('./images/tick.svg') no-repeat center/50% 50%;
+}
+
+.service-card__item:nth-child(2) .service-card__feature-icon {
+    background: #F03E3D url('./images/tick.svg') no-repeat center/50% 50%;
+}
+
+.service-card__item:nth-child(3) .service-card__feature-icon {
+    background: #4D8DFF url('./images/tick.svg') no-repeat center/50% 50%;
+}
+
 
 @media (min-width: 780px){
     .service-card {
         display: flex;
         gap: 6rem; 
     }
+    .service-card:nth-child(2){
+        flex-direction: row-reverse;
+    }
     .service-card__image {
         flex: 48%;
         max-width: 543px;
+    }
+    .service-card__image > * {
+        width: 100%;
+        height: 100%;
     }
 }
