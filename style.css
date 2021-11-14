@@ -408,3 +408,41 @@ body {
         margin: 0;
     }       
 }
+
+
+/* strategies */
+
+.strategies__list {
+    margin-top: 2rem;
+}
+
+.strategy-card {
+    border: 1px solid #DEDEDE;
+    border-radius: .5rem;
+}
+
+.strategy-card + .strategy-card {
+    margin-top: 2rem;
+}
+
+.strategy-card__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.strategy-card__author {
+    font-weight: 700;
+}
+
+.strategy-card__title {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.strategy-card__info {
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
+}
