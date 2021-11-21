@@ -25,7 +25,8 @@ img {
 /* basic layout settings */
 
 .main,
-.header {
+.header,
+.footer {
     width: 80%;
     margin: 0 auto;
 }
@@ -649,3 +650,32 @@ body {
         flex-direction: row;
     }
 }
+
+
+/* footer */
+
+.footer__social-links-items {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.footer__social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    border-radius: 100%;
+    background: #EDFFFC;
+}
+
+.footer__social-link {
+    padding: 1rem;
+} 
+
+.footer__social-item + .footer__social-item {
+    margin-left: 1rem;
+}
+
+
