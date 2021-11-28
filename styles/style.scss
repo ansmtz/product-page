@@ -1,112 +1,31 @@
-/* basic reset */
+@import "./setup/reset";
+@import "./sizes/sizes";
+@import "./setup/layout";
+@import "./sizes/sizes";
+@import "./setup/fonts";
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "./components/nav";
 
-ul {
-    list-style: none;
-}
 
-a {
-    text-decoration: none;
-}
 
-button {
-    font-family: inherit;
-}
 
-img {
-    display: block;
-}
-
-:root {
-    /* sizes */
-    --xs: .25rem;
-    --s: .5rem;
-    --m: 1rem;
-    --l: 1.5rem;
-    --xl: 2rem;
-    --slg: 2.5rem;
-    --exlg: 4rem;
-}
-
-/* basic layout settings */
-
-.main,
-.header,
-.footer {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.main > * {
-    margin: var(--exlg) auto;
-}
-
-.nav__list {
-    display: none;
-    flex: 100%;
-}
 
 .visible {
     display: block;
 }
 
-@media (min-width: 780px){
-    .main,
-    .header {
-        width: 90%;
-    }
-    .features__list,
-    .experts__list,
-    .strategies__list,
-    .testimonials__list
-    {
-        display: flex;
-    }
-    .nav__list {
-        display: flex;
-        flex: none;
-    }
-    .nav__menu-btn {
-        display: none;
-    }
-}
+
+
+
 
 
 /* basic font settings */
 
-body {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    color: #22343D;
-}
+
 
 /* headers */
 
-.title {
-    font-weight: 700;
-    font-size: var(--slg);
-}
-.subtitle {
-    font-weight: 700;
-    font-size: var(--xl);
-    margin-bottom: var(--l);
-}
-.subtitle-2 {
-    font-size: var(--m);
-    font-weight: 600;
-    margin-bottom: var(--s);
-}
 
-.subtitle-3 {
-    font-size: var(--m);
-    font-weight: 500;
-    margin-bottom: var(--m);
-}
 
  
 /* bullet */
@@ -123,56 +42,14 @@ body {
 
 /* Navbar */
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
-    padding: 1rem 0;
-}
 
-.nav__menu-btn {
-    width: var(--l);
-    height: var(--l);
-    margin-left: auto;
-    background: url('./images/menu.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: none;
-    cursor: pointer;
-}
 
-.nav__list {
-    padding: var(--l) 0;
-    position: absolute;
-    width: 100%;
-    top: 100%;
-    background: #fff;
-}
 
-.nav__item + .nav__item {
-    margin-top: var(--m);
-}
 
-.nav__link {
-    font-weight: 500;
-    color: #22343D;
-}
 
-@media (min-width: 780px){
-    .nav__list {
-        position: static;
-        width: initial;
-        display: flex;
-        align-items: center;
-    }
-    .nav__item + .nav__item {
-        margin-left: var(--m);
-        margin-top: 0;
-    }
-}
+
+
+
 
 .experts__info,
 .strategies__description,

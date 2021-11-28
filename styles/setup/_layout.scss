@@ -1,0 +1,24 @@
+.header,
+.main,
+.footer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main > * {
+    margin: $xxx-large auto;
+}
+
+@media (min-width: 780px){
+    .main,
+    .header {
+        width: 90%;
+    }
+    .features__list,
+    .experts__list,
+    .strategies__list,
+    .testimonials__list
+    {
+        display: flex;
+    }
+}

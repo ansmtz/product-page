@@ -1,0 +1,26 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #22343D;
+}
+
+.title {
+    font-weight: 700;
+    font-size: $xx-large
+}
+.subtitle {
+    font-weight: 700;
+    font-size: $x-large;
+    margin-bottom: $large;
+}
+.subtitle-2 {
+    font-size: $medium;
+    font-weight: 600;
+    margin-bottom: $small;
+}
+
+.subtitle-3 {
+    font-size: $medium;
+    font-weight: 500;
+    margin-bottom: $medium;
+}
