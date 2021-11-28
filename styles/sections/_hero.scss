@@ -1,0 +1,41 @@
+.hero {
+    display: grid;
+}
+
+.hero__title {
+    align-self: end;
+}
+
+.hero__image {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.hero__image > * {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.hero__text {
+    font-size: 1.2rem;
+}
+
+@media (min-width: 780px){
+    .hero {
+        grid-template-columns: auto minmax(30%, 600px);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .hero__image {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .hero__text {
+        margin-top: 0;
+    }
+}

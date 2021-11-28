@@ -1,0 +1,59 @@
+.service-card + .service-card {
+    margin-top: $large;
+}
+
+.service-card__image > * {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.service-card__description,
+.service-card__list {
+    margin-bottom: $medium;
+}
+
+.service-card__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.service-card__item + .service-card__item {
+    margin-top: $small;
+}
+
+.service-card__feature-description {
+    margin-left: $medium;
+    flex: 70%;
+}
+
+.service-card__item:nth-child(1) .service-card__feature-icon {
+    background: #FF9900 url('./images/tick.svg') no-repeat center/50% 50%;
+}
+
+.service-card__item:nth-child(2) .service-card__feature-icon {
+    background: #F03E3D url('./images/tick.svg') no-repeat center/50% 50%;
+}
+
+.service-card__item:nth-child(3) .service-card__feature-icon {
+    background: #4D8DFF url('./images/tick.svg') no-repeat center/50% 50%;
+}
+
+@media (min-width: 780px){
+    .service-card {
+        display: flex; 
+    }
+    .service-card:nth-child(2){
+        flex-direction: row-reverse;
+    }
+    .service-card__image {
+        flex: 48%;
+        max-width: 543px;
+    }
+    .service-card__image > * {
+        width: 100%;
+        height: 100%;
+    }
+}

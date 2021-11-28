@@ -1,0 +1,36 @@
+.strategy-card {
+    border: 1px solid #DEDEDE;
+    border-radius: $small;
+}
+
+.strategy-card + .strategy-card {
+    margin-top: $large;
+}
+
+.strategy-card__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-top-left-radius: $small;
+    border-top-right-radius: $small;
+}
+
+.strategy-card__author {
+    font-weight: 700;
+}
+
+.strategy-card__title {
+    font-size: $large;
+}
+
+@media (min-width: 780px) {
+    .strategy-card {
+        flex: 1;
+    }
+    .strategy-card + .strategy-card {
+        margin-left: $large;
+        margin-top: 0;
+    }     
+}
+

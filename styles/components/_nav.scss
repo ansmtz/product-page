@@ -32,6 +32,10 @@
     background: #fff;
 }
 
+.visible {
+    display: block;
+}
+
 .nav__item + .nav__item {
     margin-top: $medium;
 }

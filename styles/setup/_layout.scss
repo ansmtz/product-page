@@ -9,6 +9,14 @@
     margin: $xxx-large auto;
 }
 
+.experts__info,
+.strategies__description,
+.prices__description,
+.testimonials__description
+{
+    margin-bottom: var(--m);
+}
+
 @media (min-width: 780px){
     .main,
     .header {

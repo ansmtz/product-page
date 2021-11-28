@@ -1,0 +1,22 @@
+.prices {
+    text-align: center;
+}
+
+.price-card + .price-card {
+    margin-top: $large;
+}
+
+
+@media (min-width: 780px) {
+    .price-cards {
+        display: flex;
+        margin-top: $large;
+    }
+    .price-card {
+        flex: 1;
+    }
+    .price-card + .price-card {
+        margin-top: 0;
+        margin-left: $large;
+    }
+}
