@@ -11,6 +11,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 button {
@@ -28,8 +29,15 @@ img {
   margin: 0 auto;
 }
 
-.main > * {
-  margin: 4rem auto;
+.hero,
+.features,
+.services,
+.experts,
+.strategies,
+.prices,
+.testimonials,
+.footer {
+  padding: 2rem 0;
 }
 
 .experts__info,
@@ -68,13 +76,13 @@ body {
 .subtitle {
   font-weight: 700;
   font-size: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .subtitle-2 {
   font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .subtitle-3 {
@@ -219,18 +227,22 @@ body {
 .hero {
   display: -ms-grid;
   display: grid;
+  padding: 2rem 0;
 }
 
 .hero__title {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+  line-height: 3rem;
+  margin-bottom: 1rem;
 }
 
 .hero__image {
   -ms-grid-row: 2;
       grid-row-start: 2;
   grid-row-end: 3;
+  margin-bottom: 1rem;
 }
 
 .hero__image > * {
@@ -243,6 +255,7 @@ body {
 
 .hero__text {
   font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 @media (min-width: 780px) {
@@ -283,11 +296,15 @@ body {
 }
 
 .feature__description {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .feature__icon {
   margin-bottom: 0.5rem;
+}
+
+.features__list {
+  margin-bottom: 1rem;
 }
 
 .feature:nth-child(1) .feature__icon {
@@ -397,8 +414,13 @@ body {
   text-align: center;
 }
 
+.experts__info {
+  margin-bottom: 1rem;
+}
+
 .experts__list {
   width: 80%;
+  margin: 0 auto 1rem auto;
 }
 
 .experts__card {
@@ -414,12 +436,15 @@ body {
   text-align: left;
 }
 
+.expert__phrase {
+  font-size: 0.5rem;
+}
+
 .experts__card + .experts__card {
   margin-top: 1rem;
 }
 
-.experts__card:nth-child(3),
-.experts__card:nth-child(4) {
+.experts__card:nth-child(odd) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -427,11 +452,16 @@ body {
 }
 
 .expert__photo {
-  border: 3px solid red;
+  border: 2px solid red;
   border-radius: 100%;
-  max-width: 5rem;
-  max-height: 5rem;
+  max-width: 3rem;
+  max-height: 3rem;
   overflow: hidden;
+  margin-right: 0.5rem;
+}
+
+.experts__card:nth-child(odd) .expert__photo {
+  margin-left: 0.5rem;
 }
 
 .expert__photo > * {
@@ -471,6 +501,10 @@ body {
   margin-top: 1.5rem;
 }
 
+.strategy-card__info {
+  padding: 1rem;
+}
+
 .strategy-card__photo img {
   width: 100%;
   height: 100%;
@@ -487,6 +521,10 @@ body {
 
 .strategy-card__title {
   font-size: 1.5rem;
+}
+
+.strategies__description {
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 780px) {
@@ -550,6 +588,10 @@ body {
           align-items: center;
 }
 
+.price-card__currency {
+  text-align: left;
+}
+
 .price-card__value-description > * {
   display: block;
 }
@@ -569,6 +611,10 @@ body {
 
 .price-card + .price-card {
   margin-top: 1.5rem;
+}
+
+.prices__description {
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 780px) {
@@ -637,6 +683,10 @@ body {
   margin-right: 1rem;
 }
 
+.testimonial-card__author-info {
+  text-align: left;
+}
+
 .testimonial-card__photo > * {
   width: 100%;
   height: 100%;
@@ -652,6 +702,10 @@ body {
   margin-top: 2rem;
 }
 
+.testimonials__description {
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 780px) {
   .testimonial-card + .testimonial-card {
     margin-top: 0;
@@ -662,6 +716,7 @@ body {
 .cta {
   width: 100%;
   padding: 2.5rem;
+  margin: 0 auto;
   background: #02897A;
   color: #fff;
   border-radius: 2rem;
@@ -675,7 +730,7 @@ body {
 }
 
 .cta p {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 

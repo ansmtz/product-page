@@ -1,14 +1,18 @@
 .hero {
     display: grid;
+    padding: $x-large 0;
 }
 
 .hero__title {
     align-self: end;
+    line-height: 3rem;
+    margin-bottom: $medium;
 }
 
 .hero__image {
     grid-row-start: 2;
     grid-row-end: 3;
+    margin-bottom: $medium;
 }
 
 .hero__image > * {
@@ -20,6 +24,7 @@
 
 .hero__text {
     font-size: 1.2rem;
+    margin-bottom: $large;
 }
 
 @media (min-width: 780px){

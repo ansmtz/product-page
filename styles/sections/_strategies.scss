@@ -7,6 +7,10 @@
     margin-top: $large;
 }
 
+.strategy-card__info {
+    padding: $medium;
+}
+
 .strategy-card__photo img {
     width: 100%;
     height: 100%;
@@ -22,6 +26,10 @@
 
 .strategy-card__title {
     font-size: $large;
+}
+
+.strategies__description {
+    margin-bottom: $medium;
 }
 
 @media (min-width: 780px) {

@@ -5,8 +5,15 @@
     margin: 0 auto;
 }
 
-.main > * {
-    margin: $xxx-large auto;
+.hero,
+.features,
+.services,
+.experts,
+.strategies,
+.prices,
+.testimonials,
+.footer {
+    padding: $x-large 0;
 }
 
 .experts__info,

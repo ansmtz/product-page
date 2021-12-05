@@ -2,8 +2,13 @@
     text-align: center;
 }
 
+.experts__info {
+    margin-bottom: $medium;
+}
+
 .experts__list {
     width: 80%;
+    margin: 0 auto $medium auto;
 }
 
 .experts__card {
@@ -13,21 +18,29 @@
     text-align: left;
 }
 
+.expert__phrase {
+    font-size: $small;
+}
+
 .experts__card + .experts__card {
     margin-top: $medium;
 }
 
-.experts__card:nth-child(3),
-.experts__card:nth-child(4) {
+.experts__card:nth-child(odd){
     flex-direction: row-reverse;
 }
 
 .expert__photo {
-    border: 3px solid red;
+    border: 2px solid red;
     border-radius: 100%;
-    max-width: 5rem;
-    max-height: 5rem;
+    max-width: 3rem;
+    max-height: 3rem;
     overflow: hidden;
+    margin-right: $small;
+}
+
+.experts__card:nth-child(odd) .expert__photo {
+    margin-left: $small;
 }
 
 .expert__photo > * {

@@ -4,6 +4,11 @@
 .testimonial-card + .testimonial-card {
     margin-top: 2rem;
 }
+
+.testimonials__description {
+    margin-bottom: $medium;
+}
+
 @media (min-width: 780px) {
     .testimonial-card + .testimonial-card {
         margin-top: 0;

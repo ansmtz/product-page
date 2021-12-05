@@ -9,11 +9,15 @@
 }
 
 .feature__description {
-    margin-top: $medium;
+    margin-top: $small;
 }
 
 .feature__icon {
     margin-bottom: $small;
+}
+
+.features__list {
+    margin-bottom: $medium;
 }
 
 .feature:nth-child(1) .feature__icon {
