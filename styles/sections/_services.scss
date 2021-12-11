@@ -1,11 +1,11 @@
 .service-card + .service-card {
-    margin-top: $large;
+    margin-top: $xxx-large;
 }
 
 .service-card__image > * {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     margin: 0 auto;
 }
 
@@ -30,30 +30,37 @@
 }
 
 .service-card__item:nth-child(1) .service-card__feature-icon {
-    background: #FF9900 url('./images/tick.svg') no-repeat center/50% 50%;
+    background: #FF9900 url('../../images/ui/tick.svg') no-repeat center/50% 50%;
 }
 
 .service-card__item:nth-child(2) .service-card__feature-icon {
-    background: #F03E3D url('./images/tick.svg') no-repeat center/50% 50%;
+    background: #F03E3D url('../../images/ui/tick.svg') no-repeat center/50% 50%;
 }
 
 .service-card__item:nth-child(3) .service-card__feature-icon {
-    background: #4D8DFF url('./images/tick.svg') no-repeat center/50% 50%;
+    background: #4D8DFF url('../../images/ui/tick.svg') no-repeat center/50% 50%;
 }
 
 @media (min-width: 780px){
     .service-card {
-        display: flex; 
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; 
     }
     .service-card:nth-child(2){
         flex-direction: row-reverse;
     }
     .service-card__image {
-        flex: 48%;
-        max-width: 543px;
+        flex: 30%;
+        max-width: 540px;
+        // max-height: 543px;
     }
-    .service-card__image > * {
-        width: 100%;
-        height: 100%;
-    }
+
+    .service-card:nth-child(2) .service-card__info {
+        margin-right: 0;
+    }  
+    .service-card__info {
+        max-width: 550px;
+        margin-bottom: 0;
+    } 
 }

@@ -11,7 +11,7 @@
 .testimonial-card__star {
     width: $medium;
     height: $medium;
-    background: url('./images/star-2.svg');
+    background: url('../../images/ui/star-2.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -22,7 +22,7 @@
 }
 
 .testimonial-card__star--unfilled {
-    background: url('./images/star.svg');
+    background: url('../../images/ui/star.svg');
     background-size: contain;
 }
 
