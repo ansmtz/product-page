@@ -1,13 +1,31 @@
+.strategies__list {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.strategies__list::-webkit-scrollbar {
+    display: none;
+}
+
 .strategy-card {
+    flex: 1;
+    min-width: 200px;
+    // width: 100%;
     border: 1px solid #DEDEDE;
     border-radius: $small;
 }
 
 .strategy-card + .strategy-card {
-    margin-top: $large;
-}
+    margin-left: $large;
+}  
 
 .strategy-card__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: $medium;
 }
 
@@ -36,9 +54,6 @@
     .strategy-card {
         flex: 1;
     }
-    .strategy-card + .strategy-card {
-        margin-left: $large;
-        margin-top: 0;
-    }     
+       
 }
 
