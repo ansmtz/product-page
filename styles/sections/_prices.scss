@@ -2,25 +2,49 @@
     text-align: center;
 }
 
-.price-card + .price-card {
-    margin-top: $large;
+.price-cards {
+    display: flex;
+    // justify-content: center;
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.price-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.price-card {
+    min-width: 300px;
+}
+
+@supports (scroll-snap-type: x mandatory){
+    .price-cards {
+        scroll-snap-type: x mandatory;
+        scroll-padding: 0 $large;
+    }
+    .price-card {
+        scroll-snap-align: center;
+    }
+}
+
+.price-card {
+    margin: 0 $small;
+}
+
+.price-card:nth-child(1),
+.price-card:nth-child(3) {
+    transform: scale(.9);
 }
 
 .prices__description {
     margin-bottom: $medium;
 }
 
-
 @media (min-width: 780px) {
-    .price-cards {
-        display: flex;
-        margin-top: $large;
-    }
-    .price-card {
-        flex: 1;
-    }
-    .price-card + .price-card {
-        margin-top: 0;
-        margin-left: $large;
-    }
+    // .price-card {
+    //     min-width: 300px;
+    // }
 }
+
+
