@@ -2,32 +2,6 @@
     text-align: center;
 }
 
-.price-cards {
-    display: flex;
-    // justify-content: center;
-    width: 100%;
-    overflow-x: auto;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-.price-cards::-webkit-scrollbar {
-    display: none;
-}
-
-.price-card {
-    min-width: 300px;
-}
-
-@supports (scroll-snap-type: x mandatory){
-    .price-cards {
-        scroll-snap-type: x mandatory;
-        scroll-padding: 0 $large;
-    }
-    .price-card {
-        scroll-snap-align: center;
-    }
-}
-
 .price-card {
     margin: 0 $small;
 }
@@ -42,9 +16,14 @@
 }
 
 @media (min-width: 780px) {
-    // .price-card {
-    //     min-width: 300px;
-    // }
+   .price-cards {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   .price-card {
+       min-width: 300px;
+   } 
 }
 
 
