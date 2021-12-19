@@ -381,15 +381,15 @@ body {
 }
 
 .service-card__item:nth-child(1) .service-card__feature-icon {
-  background: #FF9900 url("../../images/ui/tick.svg") no-repeat center/50% 50%;
+  background: #FF9900 url("../images/ui/tick.svg") no-repeat center/50% 50%;
 }
 
 .service-card__item:nth-child(2) .service-card__feature-icon {
-  background: #F03E3D url("../../images/ui/tick.svg") no-repeat center/50% 50%;
+  background: #F03E3D url("../images/ui/tick.svg") no-repeat center/50% 50%;
 }
 
 .service-card__item:nth-child(3) .service-card__feature-icon {
-  background: #4D8DFF url("../../images/ui/tick.svg") no-repeat center/50% 50%;
+  background: #4D8DFF url("../images/ui/tick.svg") no-repeat center/50% 50%;
 }
 
 @media (min-width: 780px) {
