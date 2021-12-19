@@ -15,11 +15,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    align-items: flex-end;
     text-align: left;
-}
-
-.expert__phrase {
-    font-size: $small;
 }
 
 .experts__card + .experts__card {
@@ -48,6 +45,40 @@
     width: 100%;
     height: 100%;
 }
+
+.expert__phrase {
+    background: #e2ece8;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    padding: $small;
+    position: relative;
+}
+
+.experts__card:nth-child(even) .expert__phrase {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: .5rem; 
+}
+
+.expert__phrase::before {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 1rem;
+    height: 1rem;
+    background: #e2ece8;
+    content: "";
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+.experts__card:nth-child(even) .expert__phrase::before{
+    bottom: 0;
+    left: -8%;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
 
 @media (min-width: 780px) {
     .experts__list {
