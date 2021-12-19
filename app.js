@@ -4,3 +4,5 @@ const menuBtn = document.getElementById('menuBtn'),
 menuBtn.addEventListener('click', () => {
     menu.classList.toggle('visible');
 })
+
+console.log("Hi");
