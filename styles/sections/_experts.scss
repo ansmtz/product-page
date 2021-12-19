@@ -2,18 +2,13 @@
     text-align: center;
 }
 
-.experts__info {
-    margin-bottom: $medium;
-}
-
 .experts__list {
     width: 80%;
-    margin: 0 auto $medium auto;
+    margin: $medium auto;
 }
 
 .experts__card {
     display: flex;
-    align-items: center;
     justify-content: flex-start;
     align-items: flex-end;
     text-align: left;
@@ -28,7 +23,7 @@
 }
 
 .expert__photo {
-    border: 2px solid red;
+    border: 4px solid #d45418;
     border-radius: 100%;
     max-width: 3rem;
     max-height: 3rem;
@@ -38,6 +33,7 @@
 
 .experts__card:nth-child(odd) .expert__photo {
     margin-left: $small;
+    margin-right: 0;
 }
 
 .expert__photo > * {
@@ -48,35 +44,31 @@
 
 .expert__phrase {
     background: #e2ece8;
-    border-top-left-radius: .5rem;
-    border-top-right-radius: .5rem;
-    border-bottom-left-radius: .5rem;
+    border-radius: .5rem .5rem 0 .5rem;
     padding: $small;
     position: relative;
 }
 
 .experts__card:nth-child(even) .expert__phrase {
-    border-top-left-radius: .5rem;
-    border-top-right-radius: .5rem;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: .5rem; 
+    border-radius: .5rem .5rem .5rem 0;
 }
 
 .expert__phrase::before {
     position: absolute;
-    bottom: 0;
-    left: 100%;
     width: 1rem;
     height: 1rem;
     background: #e2ece8;
     content: "";
-    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    bottom: 0;
+    right: 100%;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    border-radius: 0 0 0 .5rem;
 }
 
-.experts__card:nth-child(even) .expert__phrase::before{
-    bottom: 0;
-    left: -8%;
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+.experts__card:nth-child(odd) .expert__phrase::before {
+    left: 100%;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    border-radius: 0 0 .5rem 0;
 }
 
 
@@ -90,6 +82,6 @@
         flex: 40%;
     }
     .experts__card + .experts__card {
-        margin: 0;
+        margin-left: $medium;
     }       
 }
