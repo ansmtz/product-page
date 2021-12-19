@@ -60,13 +60,13 @@
     background: #e2ece8;
     content: "";
     bottom: 0;
-    right: 100%;
+    right: 98%;
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     border-radius: 0 0 0 .5rem;
 }
 
 .experts__card:nth-child(odd) .expert__phrase::before {
-    left: 100%;
+    left: 98%;
     clip-path: polygon(0 0, 0% 100%, 100% 100%);
     border-radius: 0 0 .5rem 0;
 }
