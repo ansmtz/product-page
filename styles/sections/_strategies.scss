@@ -1,7 +1,7 @@
 .strategies__list {
     width: 100%;
     display: flex;
-    overflow-x: auto;
+    overflow-x: scroll;
     cursor: grab;
     -ms-overflow-style: none;
     scrollbar-width: none;

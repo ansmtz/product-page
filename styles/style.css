@@ -538,7 +538,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow-x: auto;
+  overflow-x: scroll;
   cursor: -webkit-grab;
   cursor: grab;
   -ms-overflow-style: none;
