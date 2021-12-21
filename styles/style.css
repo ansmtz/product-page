@@ -539,6 +539,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   overflow-x: auto;
+  cursor: -webkit-grab;
+  cursor: grab;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
