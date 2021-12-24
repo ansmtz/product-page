@@ -70,8 +70,14 @@
 }
 
 @media (min-width: 780px) {
-    .strategy-card {
-        min-width: calc(80vw / 3);
+    .strategies__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: $medium;
+    }
+
+    .strategy-card + .strategy-card {
+        margin: 0;
     }
        
 }

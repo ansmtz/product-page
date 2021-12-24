@@ -619,8 +619,15 @@ body {
 }
 
 @media (min-width: 780px) {
-  .strategy-card {
-    min-width: calc(80vw / 3);
+  .strategies__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+  .strategy-card + .strategy-card {
+    margin: 0;
   }
 }
 
