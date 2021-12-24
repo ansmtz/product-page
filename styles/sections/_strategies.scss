@@ -69,11 +69,12 @@
     margin-bottom: $medium;
 }
 
-@media (min-width: 780px) {
+@media (min-width: 850px) {
     .strategies__list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: $medium;
+        overflow: hidden;
     }
 
     .strategy-card + .strategy-card {

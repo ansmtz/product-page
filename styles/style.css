@@ -618,13 +618,14 @@ body {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 780px) {
+@media (min-width: 850px) {
   .strategies__list {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
+    overflow: hidden;
   }
   .strategy-card + .strategy-card {
     margin: 0;
